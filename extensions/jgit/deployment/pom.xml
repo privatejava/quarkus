@@ -7,7 +7,7 @@
         <groupId>io.quarkus</groupId>
         <artifactId>quarkus-jgit-parent</artifactId>
         <version>1.6.0.Final</version>
-        <!-- <relativePath>../</relativePath> -->
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>quarkus-jgit-deployment</artifactId>
