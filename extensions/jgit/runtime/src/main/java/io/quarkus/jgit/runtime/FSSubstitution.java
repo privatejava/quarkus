@@ -17,7 +17,7 @@ public final class FSSubstitution {
     public File userHome() {
         if(System.getenv().containsKey("JGIT_CONFIG")){
             return new File(System.getenv().get("JGIT_CONFIG")).getAbsoluteFile();
-        }else if (System.getProperty("jgit.config")){
+        }else if (System.getProperties().containsKey("jgit.config")){
             return new File(System.getProperty("JGIT_CONFIG")).getAbsoluteFile();
         }else{
             return new File(System.getProperty("user.home")).getAbsoluteFile();
